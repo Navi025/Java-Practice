@@ -8,7 +8,7 @@ Java Revision Repo
 * loops
 * Function and Meathods
 * Advanced Patterns
-  **DSA**
+* **DSA**
 * Arrays
 * 2D Array and Strings
 * Problem Solving Algos
