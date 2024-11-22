@@ -8,9 +8,9 @@ Java Revision Repo
 * loops
 * Function and Meathods
 * Advanced Patterns
+  **DSA**
 * Arrays
 * 2D Array and Strings
-**DSA**
 * Problem Solving Algos
 * OOPS
 * Linear Data Structures
