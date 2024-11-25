@@ -52,7 +52,7 @@ public class Arrays{
 }
 
             LINEAR SEARCH
-*/
+
 
 public class Arrays{
     public static int linearSearch(int number[], int key){
@@ -75,5 +75,26 @@ public class Arrays{
         else{
             System.out.println("The key exists at index: "+ index);
         }
+    }
+}
+
+            LARGEST NUMBER
+
+*/
+
+import java.util.*;
+public class Arrays{
+    public static int largestNumber(int number[]){
+        int lar = Integer.MIN_VALUE; // -infinity
+        for (int i=0; i<number.length; i++) {
+            if(lar < number[i]) {
+                lar = number[i];
+            }
+        }
+        return lar;
+    }
+    public static void main(String args[]){
+        int number[] = {2,4,5,7,9,5,2,1,3,4};
+        System.out.print("The Largest number is: " + largestNumber(number));
     }
 }
