@@ -81,16 +81,19 @@ public class Arrays{
             LARGEST NUMBER
 
 */
-
-import java.util.*;
 public class Arrays{
     public static int largestNumber(int number[]){
         int lar = Integer.MIN_VALUE; // -infinity
+        int low = Integer.MAX_VALUE; // +infinity
         for (int i=0; i<number.length; i++) {
             if(lar < number[i]) {
                 lar = number[i];
             }
+            if(low > number[i]){
+                low = number[i];
+            }
         }
+        System.out.println("The lowest no: "+ low);
         return lar;
     }
     public static void main(String args[]){
@@ -98,3 +101,5 @@ public class Arrays{
         System.out.print("The Largest number is: " + largestNumber(number));
     }
 }
+
+            
