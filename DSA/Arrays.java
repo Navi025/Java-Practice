@@ -80,7 +80,7 @@ public class Arrays{
 
             LARGEST NUMBER
 
-*/
+
 public class Arrays{
     public static int largestNumber(int number[]){
         int lar = Integer.MIN_VALUE; // -infinity
@@ -102,4 +102,94 @@ public class Arrays{
     }
 }
 
-            
+            BINARY SEARCH
+  
+
+public class Arrays{
+    public static int binarySearch(int number[], int key){
+        int start = 0;
+        int end = number.length-1;
+
+        while(start<=end){
+            int mid = (start+end)/2;
+
+            if (number[mid] == key){
+                return mid;
+            } 
+            else if (number[mid]<key){
+                start = mid + 1;
+            }
+            else if (number[mid]>key){
+                end = mid - 1;
+            }
+        }
+        return -1;
+    }
+
+    public static void main(String args[]){
+        int number[] = {2,4,6,7,8,9,10,12,14,16};
+        int key = 100;
+        int result = binarySearch(number,key);
+
+        if (result == -1){
+            System.out.print("Not found.");
+        } 
+        else{
+            System.out.print("The required no is at index: " + result);
+        }
+    }
+}
+
+        REVERSE OF AN ARRAY
+
+
+public class Arrays{
+    public static void reverse(int number[]){
+        int first = 2; 
+        int last = number.length-1;
+
+        while(first < last){
+            int temp = number[last];
+            number[last] = number[first];
+            number[first]=temp;
+
+            first++;
+            last--;
+        }
+    }
+    public static void main(String args[]){
+        int number[] = {2,4,5,6,7,8,9,6,5,3,2,1};
+        
+        reverse(number);
+        for (int i=0; i<=number.length-1; i++){
+            System.out.print(number[i] + " ");
+        }
+    }
+}
+
+            PAIRS OF NUMBERS IN ARRAY
+
+
+public class Arrays{
+    public static void pairs(int number[]){
+        int tp=0;
+        for (int i=0; i<number.length; i++){
+            int curr = number[i];
+            for (int j=i+1; j<number.length; j++){
+                System.out.print("(" + curr + "," + number[j]+ ")");
+            tp++;
+            }
+            System.out.println();
+        }
+        System.out.print("Total pairs : " + tp);
+    }
+
+    public static void main(String args[]){
+        int number[] = {2,4,6,7,8,9,10};
+        pairs(number);
+    }
+}
+
+                SUB ARRAY
+*/
+
