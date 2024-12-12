@@ -190,6 +190,88 @@ public class Arrays{
     }
 }
 
-                SUB ARRAY
+                PRINT SUB ARRAY
+
+
+public class Arrays{
+    public static void subarray(int number[]){
+        for (int i=0; i<number.length; i++){
+            int start = i;
+            for (int j= i; j<number.length; j++){
+                int end = j;
+                for (int k = start; k<= end; k++){
+                    System.out.print( number[k] + " ");
+                }
+                System.out.println();
+            }
+            System.out.println();
+        }
+    }
+    public static void main(String args[]){
+        int number[] = {2,4,6,8,10};
+        subarray(number);
+    }
+}
+
+            SUM OF SUB-ARRAY
+            MIN & MAX SUM
+
+            BRUTE FORCE (T.C. = math.power(n,3))
+
+public class Arrays{
+    public static void sumOfSubarray(int number[]){
+        int currSum = 0;
+        int maxSum = Integer.MIN_VALUE;
+        
+        for (int i=0; i<number.length; i++){        
+            for (int j = i; j<number.length; j++){
+                currSum = 0;
+                for (int k = i; k<= j; k++){
+                    currSum += number[k];
+                }
+                System.out.println( currSum + " ");
+                if(currSum>maxSum){
+                        maxSum = currSum;
+                }
+            }
+            System.out.println();
+        }
+        System.out.print("MAximim Sum is : " + maxSum);
+    }
+    public static void main(String args[]){
+        int number[] = {1,-2,6,-1,3};
+        sumOfSubarray(number);
+    }
+}
+
 */
 
+public class Arrays{
+    public static void sumOfSubArray(int number []){
+        int currSum = 0;
+        int maxSum = Integer.MIN_VALUE;
+
+        for (int i = 0; i<number.length; i++){
+            for (int j = i; j<number.length; j++){
+                currSum=0;
+                for (int k = i; k<=j; k++){
+                    currSum += number[k];
+                    //System.out.println(currSum + " ");
+                }
+                System.out.println(currSum + " ");
+                 if (currSum>maxSum){
+                maxSum = currSum;
+                }
+            }
+           
+            System.out.println();
+        }
+        System.out.print("The maximum Sum is: " + maxSum);
+    }
+
+    public static void main(String args[]){
+        int number[] = {1,-2,6,-1,3} ;
+        sumOfSubArray(number);
+    }
+
+}
