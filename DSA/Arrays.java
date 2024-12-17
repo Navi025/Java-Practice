@@ -246,32 +246,74 @@ public class Arrays{
 
 */
 
-public class Arrays{
-    public static void sumOfSubArray(int number []){
-        int currSum = 0;
-        int maxSum = Integer.MIN_VALUE;
+// public class Arrays{
+//     public static void sumOfSubArray(int number []){
+//         int currSum = 0;
+//         int maxSum = Integer.MIN_VALUE;
 
-        for (int i = 0; i<number.length; i++){
-            for (int j = i; j<number.length; j++){
-                currSum=0;
-                for (int k = i; k<=j; k++){
-                    currSum += number[k];
-                    //System.out.println(currSum + " ");
+//         for (int i = 0; i<number.length; i++){
+//             for (int j = i; j<number.length; j++){
+//                 currSum=0;
+//                 for (int k = i; k<=j; k++){
+//                     currSum += number[k];
+//                     //System.out.println(currSum + " ");
+//                 }
+//                 System.out.println(currSum + " ");
+//                  if (currSum>maxSum){
+//                 maxSum = currSum;
+//                 }
+//             }
+           
+//             System.out.println();
+//         }
+//         System.out.print("The maximum Sum is: " + maxSum);
+//     }
+
+//     public static void main(String args[]){
+//         int number[] = {1,-2,6,-1,3} ;
+//         sumOfSubArray(number);
+//     }
+
+// }
+
+//    BINARY SEARCH
+// plan: V-mid, start, end
+//     I=key, array number
+//     p=mid=key;mid<key,strt=mid+1; mid>key,end=mid-1
+//     0=i i.e key
+
+public class Arrays{
+    public static int binarySearch(int number[], int key){
+        for(int i=0; i<number.length; i++){
+            int start = 0;
+            int end = number.length-1;
+
+            while(start<=end){
+                int mid=(start+end)/2;
+                if(number[mid]==key){
+                    return mid;
                 }
-                System.out.println(currSum + " ");
-                 if (currSum>maxSum){
-                maxSum = currSum;
+                else if(number[mid]<key){
+                    start=mid+1;
+                }
+                else if(number[mid]>key){
+                    end=mid-1;
                 }
             }
-           
-            System.out.println();
+            
         }
-        System.out.print("The maximum Sum is: " + maxSum);
+        return -1;
     }
-
     public static void main(String args[]){
-        int number[] = {1,-2,6,-1,3} ;
-        sumOfSubArray(number);
-    }
+        int number[]={2,4,6,7,8,9,10,15,19,20};
+        int key=20;
+        int result=binarySearch(number, key);
 
+        if (result==-1){
+            System.out.print("The no is not in array");
+        }
+        else{
+        System.out.print("The no is at index: " + binarySearch(number,key));
+        }
+    }
 }

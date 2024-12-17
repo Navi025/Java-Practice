@@ -8,15 +8,15 @@
         *       *
         *       *
         * * * * *
-*/     
-public class Jpatturn{
-    public static void hollow_rectangle(int rows, int col){
-        for (int i=1; i<=rows; i++){
-            for (int j=1; j<=col; j++){
-                if (i==1 ||i==rows || j==1 || j==col){
+ */
+public class Jpatturn {
+
+    public static void hollow_rectangle(int rows, int col) {
+        for (int i = 1; i <= rows; i++) {
+            for (int j = 1; j <= col; j++) {
+                if (i == 1 || i == rows || j == 1 || j == col) {
                     System.out.print(" * ");
-                }
-                else{
+                } else {
                     System.out.print("   ");
                 }
 
@@ -24,84 +24,85 @@ public class Jpatturn{
             System.out.println();
         }
     }
-/*
+
+    /*
         INVERTED ROTATED HALF PYRAMID  
                         *
                       * *          
                     * * *
                   * * * *
                 * * * * * 
-*/
-    public static void inverted_rotated_half_Pyramid(int n){
-        for (int i=1; i<=n; i++){
-            for (int j=1; j<=n-i; j++){
+     */
+    public static void inverted_rotated_half_Pyramid(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n - i; j++) {
                 System.out.print("   ");
             }
-            for (int j=1; j<=i; j++){
+            for (int j = 1; j <= i; j++) {
                 System.out.print(" * ");
             }
             System.out.println();
         }
     }
 
-/*
+    /*
              1 2 3 4 5 
              1 2 3 4
              1 2 3
              1 2
              1 
-*/             
-    public static void inverted_half_num_pyramid(int n){
-        for (int i=1; i<=n; i++){
-            for (int j=1; j<=n-i+1; j++){
-                System.out.print(j+" ");
+     */
+    public static void inverted_half_num_pyramid(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n - i + 1; j++) {
+                System.out.print(j + " ");
             }
             System.out.println();
         }
-        
+
     }
-/*           FLOYD'S TRIANGLE
+
+    /*           FLOYD'S TRIANGLE
                     1
                     2 3
                     4 5 6
                     7 8 9 10
                     11 12 13 14 15
-*/
+     */
 
-    public static void floydsTriangle(int n){
+    public static void floydsTriangle(int n) {
         int counter = 1;
-        for (int i=1; i<=n; i++){
-            for (int j=1; j<=i; j++){
-                System.out.print(counter+" ");
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(counter + " ");
                 counter++;
             }
             System.out.println();
         }
     }
 
-/*        0-1 Triangle
+    /*        0-1 Triangle
                 1
                 0 1
                 1 0 1
                 0 1 0 1
                 1 0 1 0 1    
-*/    
-    public static void binaryTriangle(int n){
-        for (int i=1; i<=n; i++){
-            for (int j=1; j<=i; j++){
-                if((i+j)%2==0){
+     */
+    public static void binaryTriangle(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                if ((i + j) % 2 == 0) {
                     System.out.print("1 ");
-                }
-                else{
+                } else {
                     System.out.print("0 ");
                 }
-                
-                
+
             }
             System.out.println();
         }
     }
-/*             BUTTERFLY (n=4)
+
+    /*             BUTTERFLY (n=4)
             *             *
             * *         * *
             * * *     * * *
@@ -111,7 +112,7 @@ public class Jpatturn{
             * *         * *
             *             *  
 
-*/
+
 
     public static void butterfly(int n){
         // outter loop -> lines/rows
@@ -144,6 +145,18 @@ public class Jpatturn{
             }
             System.out.println();
         }
+          for (int i = n; i >= 1; i--) {
+            for (int j = 1; j <= i; i++) {
+                System.out.print("*");
+            }
+            for (int j = 1; j <= 2 * (n - i); j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
 
         
     } 
@@ -153,42 +166,43 @@ public class Jpatturn{
             * * * * *
           * * * * *         
         * * * * *
-*/
-    public static void solid_rhombus(int n){
-        for (int i=1; i<=n; i++){
-            for (int j=1; j<=n-i; j++){
+     */
+    public static void solid_rhombus(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n - i; j++) {
                 System.out.print("   ");
             }
-            for (int j=1; j<=n; j++ ){
+            for (int j = 1; j <= n; j++) {
                 System.out.print(" * ");
             }
             System.out.println();
         }
     }
-/*          Hollow Rhombus
+
+    /*          Hollow Rhombus
                  * * * * *
                *       *
              *       *
            *       *
          * * * * *   
-*/
-    public static void hollow_Rhombus(int n){
-        for (int i=1; i<=n; i++){
-            for (int j=1; j<=n-i; j++){
+     */
+    public static void hollow_Rhombus(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n - i; j++) {
                 System.out.print("   ");
             }
-            for (int j=1; j<=n; j++){
-                if(i==1 || i==n || j==1 || j==n){
+            for (int j = 1; j <= n; j++) {
+                if (i == 1 || i == n || j == 1 || j == n) {
                     System.out.print(" * ");
-                }
-                else{
+                } else {
                     System.out.print("   ");
                 }
             }
-            System.out.println();        
+            System.out.println();
         }
     }
-/*              Diamond
+
+    /*              Diamond
                     *
                    ***
                   *****
@@ -196,7 +210,7 @@ public class Jpatturn{
                   *****
                    ***
                     *
-*/
+
     public static void diamond(int n){
         for (int i=1; i<=n; i++){
             for (int j=1; j<=n-i; j++){
@@ -232,5 +246,37 @@ public class Jpatturn{
         //hollow_Rhombus(5);
         //diamond(4);
     }
-}
+}*/
 
+    public static void butterfly(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            for (int j = 1; j <= 2 * (n - i); j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for (int i = n; i >= 1; i--) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            for (int j = 1; j <= 2 * (n - i); j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+    }
+
+    public static void main(String args[]) {
+        butterfly(5);
+    }
+}
