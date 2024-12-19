@@ -244,13 +244,12 @@ public class Arrays{
     }
 }
 
-*/
+ */
 
 // public class Arrays{
 //     public static void sumOfSubArray(int number []){
 //         int currSum = 0;
 //         int maxSum = Integer.MIN_VALUE;
-
 //         for (int i = 0; i<number.length; i++){
 //             for (int j = i; j<number.length; j++){
 //                 currSum=0;
@@ -263,57 +262,116 @@ public class Arrays{
 //                 maxSum = currSum;
 //                 }
 //             }
-           
 //             System.out.println();
 //         }
 //         System.out.print("The maximum Sum is: " + maxSum);
 //     }
-
 //     public static void main(String args[]){
 //         int number[] = {1,-2,6,-1,3} ;
 //         sumOfSubArray(number);
 //     }
-
 // }
-
 //    BINARY SEARCH
 // plan: V-mid, start, end
 //     I=key, array number
 //     p=mid=key;mid<key,strt=mid+1; mid>key,end=mid-1
 //     0=i i.e key
+// public class Arrays{
+//     public static int binarySearch(int number[], int key){
+//         for(int i=0; i<number.length; i++){
+//             int start = 0;
+//             int end = number.length-1;
+//             while(start<=end){
+//                 int mid=(start+end)/2;
+//                 if(number[mid]==key){
+//                     return mid;
+//                 }
+//                 else if(number[mid]<key){
+//                     start=mid+1;
+//                 }
+//                 else if(number[mid]>key){
+//                     end=mid-1;
+//                 }
+//             }
+//         }
+//         return -1;
+//     }
+//     public static void main(String args[]){
+//         int number[]={2,4,6,7,8,9,10,15,19,20};
+//         int key=20;
+//         int result=binarySearch(number, key);
+//         if (result==-1){
+//             System.out.print("The no is not in array");
+//         }
+//         else{
+//         System.out.print("The no is at index: " + binarySearch(number,key));
+//         }
+//     }
+// }
+// import java.util.*;
+// public class Arrays{
+//     public static void main(String args[]){
+//         int number[]=new int[5];
+//         System.out.println("ENter the elements of array: ");
+//         Scanner sc=new Scanner(System.in);
+//         number[0]=sc.nextInt();
+//         number[1]=sc.nextInt();
+//         number[2]=sc.nextInt();
+//         number[3]=sc.nextInt();
+//         number[4]=sc.nextInt();
+//         System.out.print("number[] = "+number);
+//         }
+// }
+// public class Arrays{
+//     public static void main(String args[]){
+//         int number[]={22,45,85,965,7544,78546};
+//         int lar = Integer.MIN_VALUE;
+//         for(int i=1; i<number.length; i++){        
+//             if (number[i]>lar){
+//             lar=number[i];
+//             }
+//         }
+//         System.out.print("largest number in the array is:"+lar);
+//     }
+// }
+// p/lan: v-start,end,temp,i,j,swap
+// 
+public class Arrays {
 
-public class Arrays{
-    public static int binarySearch(int number[], int key){
-        for(int i=0; i<number.length; i++){
-            int start = 0;
-            int end = number.length-1;
+    public static void reverseArray(int number[]) {
+        int start = 0;
+        int end = number.length - 1;
 
-            while(start<=end){
-                int mid=(start+end)/2;
-                if(number[mid]==key){
-                    return mid;
-                }
-                else if(number[mid]<key){
-                    start=mid+1;
-                }
-                else if(number[mid]>key){
-                    end=mid-1;
-                }
-            }
-            
+        while (start < end) {
+            int temp = number[end];
+            number[end] = number[start];
+            number[start] = temp;
+            start++;
+            end--;
         }
-        return -1;
+
     }
-    public static void main(String args[]){
-        int number[]={2,4,6,7,8,9,10,15,19,20};
-        int key=20;
-        int result=binarySearch(number, key);
 
-        if (result==-1){
-            System.out.print("The no is not in array");
+    public static void printPairs(int number[]){
+        int tp = 0;
+        for(int i=0; i<number.length; i++){
+            int curr = number[i];
+            for(int j=i+1; j<number.length; j++){
+                System.out.print("(" + curr + "," + number[j] + ")");
+            tp++;
+            }
+            System.out.println();
         }
-        else{
-        System.out.print("The no is at index: " + binarySearch(number,key));
-        }
+        System.out.print("Total no of pairs: " + tp);
+    }
+
+    public static void main(String args[]) {
+        int number[] = {2, 3, 4, 5, 6, 7, 8, 9};
+        // reverseArray(number);
+        // for (int i = 0; i < number.length; i++) {
+        //     System.out.print(+number[i] + " ");
+        // }
+
+        printPairs(number);
     }
 }
