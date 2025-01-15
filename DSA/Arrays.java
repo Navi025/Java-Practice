@@ -20,7 +20,7 @@
 
 import java.util.*;
 public class Arrays{
-    public static int largestno(int number[]){
+    public static void largestno(int number[]){
          int lar = Integer.MIN_VALUE;
         for(int i=1; i<number.length; i++){        
             if (number[i]>lar){
@@ -207,13 +207,37 @@ public static int linearSearch(int number[], int key){
         System.out.println("Max SubArray Sum : " + maxSum);
     }
 
+//          MAX SUB ARRAY SUM
+//            KADANE'S ALGO
+
+    public static void kadane(int number[]){
+        int maxSum = Integer.MIN_VALUE;
+        int currSum = 0;
+
+        for(int i=0; i<number.length; i++){
+            currSum = currSum + number[i];
+
+            if(currSum < 0){
+                currSum = 0;
+            }
+            maxSum = Math.max(currSum, maxSum);
+
+            
+        }
+
+        System.out.println("Max Sub Array Sum: " + maxSum );
+    }
+    
+
 //          MAIN FUNCTION
 
     public static void main(String args[]){
-        int number[] = {1, -2, 6, -1, 3};
+        int number[] = {-1, -2, -6, -1, -3};
         int key =  6;
 
-        maxSubArraySum(number);
+        kadane(number);
+
+        // maxSubArraySum(number);
 
         // maxSubArrayAum(number);
 
