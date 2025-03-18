@@ -1,4 +1,4 @@
-/*public class JavaBasics{
+public class JavaBasics{
     public static void main(String[] args) {
     System.out.print("1,2,3,6,5,");
     System.out.print("1,2,3,6,5,");
@@ -8,9 +8,9 @@
 }
 
 //boilerpalte code
-*/
 
-/*public class JavaBasics{
+
+public class JavaBasics{
     public static void main(String[] args){
         System.out.println("*****");
         System.out.println("****");
@@ -19,11 +19,11 @@
         System.out.println("*");
     }
 
-}*/
+}
 
 //VARIABLES
 
-/*public class JavaBasics{
+public class JavaBasics{
     public static void main(String args[]){
         int a = 10;
         int b = 20;
@@ -37,9 +37,9 @@
         System.out.print(a);
 
     } 
-}*/
+}
 
-/*
+
 import java.util.*;
  public class JavaBasics{
     public static void main(String args[]){
@@ -48,8 +48,8 @@ import java.util.*;
         String input = sc.nextLine();
         System.out.print(input);
     }
- } */
-/*
+ } 
+
 import java.util.*;
 public class JavaBasics{
     public static void main(String args[]){
@@ -57,9 +57,9 @@ public class JavaBasics{
         int a = sc.nextInt();
         System.out.println(a);
     }
-} */
+} 
 
-/*
+
 import java.util.*;
 public class JavaBasics{
     public static void main(String args []){
@@ -67,11 +67,11 @@ public class JavaBasics{
         float f = sc.nextFloat();
         System.out.println(f);
     }
-} */
+} 
 
 //SUM OF TWO NOS
 
-/*
+
 import java.util.*;
 public class JavaBasics{
     public static void main(String args []){
@@ -81,8 +81,8 @@ public class JavaBasics{
         int sum = a + b;
         System.out.println(sum);
     }
-}*/
-/*   PRODUCT of 2 nos
+}
+//   PRODUCT of 2 nos
 import java.util.*;
 public class JavaBasics{
     public static void main(String args[]){
@@ -92,9 +92,9 @@ public class JavaBasics{
         int produst = a * b;
         System.out.println(produst); 
     }
-}*/
+}
 
-/* ARES OF CIRCLE 
+// ARES OF CIRCLE 
 
 import java.util.*;
 public class JavaBasics{
@@ -105,10 +105,10 @@ public class JavaBasics{
         System.out.print(ar);
 
     }
-}*/
+}
 
 
-/* TYPE CONVERSION ANd TYPE CATSING 
+/* TYPE CONVERSION ANd TYPE CATSING */
 
 import java.util.*;
 public class JavaBasics{
@@ -130,18 +130,18 @@ public class JavaBasics{
         System.out.println(c);
         System.out.println(d);
     }
-}*/
-/*
+}
+
 public class JavaBasics{
     public static void main(String args []){
         int $=24;
         System.out.println($);
     }
-} */
+} 
 
 /* Question 1 : In a program, input 3 numbers:A,BandC.
 You have to output the average of these 3 numbers. 
-(Hint : Average of N numbers is sum of those numbers divided by N) 
+(Hint : Average of N numbers is sum of those numbers divided by N) */
 
 import java.util.*;
 public class JavaBacics{
@@ -156,11 +156,11 @@ public class JavaBacics{
         float av = (a + b + c)/3;
         System.out.println(av);
     }   
-}*/
+}
 
 /* Question 2 : In a program, input the side of a square. 
 You have to output the area of the square.
-(Hint : area of a square is (side x side)) 
+(Hint : area of a square is (side x side)) */
 
 import java.util.*;
 
@@ -172,12 +172,12 @@ public class JavaBasics{
         float Area = s * s;
         System.out.println(Area);
     }
-}*/
+}
 
 /* Question 3 : Enter cost of 3 items from the user (using float data type)
 -a pencil, a pen and an eraser. You have to output the total cost of the items 
 back to the user as their bill.(Add on : You can also try adding 18% gst tax to 
-the items in the bill as an advanced problem 
+the items in the bill as an advanced problem */
 
 import java.util.*;
 public class JavaBasics{
@@ -207,7 +207,7 @@ public class JavaBasics{
 
 /* CONDITIONAL STATEMENTS */
 
-/*public class JavaBasics {
+public class JavaBasics {
     public static void main(String args []){
         int age = 22;
         if (age >= 18){
@@ -217,9 +217,9 @@ public class JavaBasics{
             System.out.print("Not Adult");
         }
     }
-}*/
+}
 
-/* ODD OR EVEN 
+// ODD OR EVEN 
 import java.util.*;
 public class JavaBacics{
     public static void main(String srgs[]){
@@ -233,9 +233,9 @@ public class JavaBacics{
             System.out.println("The no is odd");
         }
     }
-}*/
+}
 
-/* Elseif 
+/* Elseif */
 import java.util.*;
 public class JavaBasics{
     public static void main(String args[]){
@@ -252,9 +252,9 @@ public class JavaBasics{
             System.out.println("You are child");
         }
     }
-}*/
+}
 
-/*INCOME TAX CALCULATOR 
+/*INCOME TAX CALCULATOR */
 import java.util.*;
 public class JavaBacics{
     public static void main(String args[]){
@@ -279,9 +279,9 @@ public class JavaBacics{
             System.out.println("Tax Applied is 30% of net income: " + tax);
         }
     }
-}*/
+}
 
-/* TERNARAY OPERATOR 
+/* TERNARAY OPERATOR */
 
 public class JavaBacics{
     public static void main(String args[]){
@@ -303,10 +303,10 @@ public class JavaBacics{
         String result = (marks>=33)?"Pass":"Fail";
         System.out.println(result);
     }
-}*/
+}
 
 
-/* SWITCH CASE 
+/* SWITCH CASE */
 public class JavaBacics{
     public static void main(String args[]){
         int no = 8;
@@ -320,9 +320,9 @@ public class JavaBacics{
             default : System.out.println("Kuch nhi milne wala");
         }
     }
-}*/
+}
 
-/* CALCULATOR 
+/* CALCULATOR */
 
 import java.util.*;
 public class JavaBasics{
@@ -353,14 +353,14 @@ public class JavaBasics{
 
     }
 
-}*/
+}
 
 
 /* CONDITIONAL STAEMENT QUESTIONS */
 
 /*Question1:
 Write a Java program to get a number from the user 
-and print whether it is positive or negative 
+and print whether it is positive or negative */
 
 import java.util.*;
 public class JavaBasics{
@@ -377,11 +377,11 @@ public class JavaBasics{
         }
 
     }
-}*/
+}
 
 /* Question2:
 Finish the following code so that it prints You have a fever if your temperature 
-is above 100 and otherwise prints You don't have a fever. 
+is above 100 and otherwise prints You don't have a fever. */
 
 public class JavaBasics{
     public static void main(String args[]){
@@ -395,11 +395,11 @@ public class JavaBasics{
             System.out.println("You don't have a fever.");
         }
     }
-}*/
+}
 
 /* Question3:
 Write a Java program to input week number(1-7) and print day of week name using 
-switch case. 
+switch case. */
 
 import java.util.*;
 public class JavaBasics{
@@ -436,12 +436,12 @@ public class JavaBasics{
         System.out.println("x = " + x);
         System.out.println("y : " + y);
     }
-}*/
+}
 
 /*Question5: WRONG SOL
 Write a Java program that takes a year from the user and print whether that year
  is a leap year or not. 
-WRONG SOL
+WRONG SOL*/
 import java.util.*;
     public class JavaBasics{
         public static void main(String args[]){
@@ -455,8 +455,8 @@ import java.util.*;
                 System.out.println("This is a leap year");
             }
             else if (year % 100 == 0){
-                System.out.println("This is a leap year");
-WRONG SOL            }
+                System.out.println("This is a leap year");}
+// WRONG SOL            
             else if (year % 400 == 0){
                 System.out.println("This is a leap year");
             }    
@@ -464,7 +464,7 @@ WRONG SOL            }
                 System.out.println("This is NOT a leap year");
             }
         }
-    }*/ 
+    }
 
 
     /* LOOPS */

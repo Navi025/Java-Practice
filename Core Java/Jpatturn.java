@@ -112,7 +112,7 @@ public class Jpatturn {
             * *         * *
             *             *  
 
-
+*/
 
     public static void butterfly(int n){
         // outter loop -> lines/rows
@@ -210,7 +210,7 @@ public class Jpatturn {
                   *****
                    ***
                     *
-
+*/
     public static void diamond(int n){
         for (int i=1; i<=n; i++){
             for (int j=1; j<=n-i; j++){
@@ -246,7 +246,7 @@ public class Jpatturn {
         //hollow_Rhombus(5);
         //diamond(4);
     }
-}*/
+}
 
     public static void butterfly(int n) {
         for (int i = 1; i <= n; i++) {

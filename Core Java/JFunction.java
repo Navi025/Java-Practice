@@ -1,5 +1,5 @@
   
-            /* JAVA FUNCTIONS 
+            /* JAVA FUNCTIONS */
 
 import java.util.*;
 public class JFunction{
@@ -22,12 +22,12 @@ public class JFunction{
         int sum = calculatesum(a,b); //here the varible sum is diffent from the above one coz its stored in another function.
         printHelloWorld();
     }
-}*/
+}
 
 
 /* CALL BY VALUE */
 
-/* PRODUCT OF TWO NOS 
+/* PRODUCT OF TWO NOS */
 
 public class JFunction{
     public static int multiply(int a,int b){
@@ -41,9 +41,9 @@ public class JFunction{
         int product = multiply(x,y);
         System.out.print("The product = " + product);
     }
-} */   
+}   
 
-/* FACTORIAL OF N 
+/* FACTORIAL OF N */
 import java.util.*;
 public class JFunction{
     
@@ -91,11 +91,11 @@ public class JFunction{
         int bincoff = bincoff(n,r);
         System.out.print("The Binomial Co-efficient is : " + bincoff);    
         }
-}*/
+}
 
             /* FUNCTIONAL OVERLOADING 
 
-                Diff No of Parameters
+                Diff No of Parameters*/
 
 public class JFunction{
     public static int sum(int a, int b){
@@ -114,7 +114,7 @@ public class JFunction{
 
     }
 }       
-            Different type
+        //    Different type
 
 public class JFunction{
     public static int sum(int a, int b){
@@ -129,11 +129,11 @@ public class JFunction{
         System.out.println(sum(4,8));
         System.out.print(sum(4.2f,8.6f));
     }
-}*/
+}
 
         /* IS PRIME NORMAL & OPTIMISED CASE */
 
-/* NORMAL 
+/* NORMAL */
 
 public class JFunction{
     public static boolean isPrime(int n){
@@ -154,9 +154,9 @@ public class JFunction{
         System.out.print(isPrime(1));
     }   
 
-}*/
+}
 
-/* OPTIMISED 
+/* OPTIMISED */
 
 //import java.math.*;
 public class JFunction{
@@ -208,7 +208,7 @@ public class JFunction{
         primeInRange(100);
     }
 }
-        /* Binary to Decimal
+        /* Binary to Decimal*/
 
 public class JFunction{
     public  static int binaryToDecimal(int  binNum){

@@ -1,5 +1,5 @@
  
- /* LOOPS 
+ /* LOOPS */
 
 
  public class JavaLoops{
@@ -13,7 +13,7 @@
     }
 }*/
 
-/* Print no 1 to 10 
+/* Print no 1 to 10 */
 
 public class JavaLoops{
     public static void main(String args[]){
@@ -37,9 +37,9 @@ public class JavaLoops{
             counter++;
         }
     }
-}*/
+}
 
-/* SUM OF FIRST N NATUTAL NOS. 
+/* SUM OF FIRST N NATUTAL NOS. */
 
 import java.util.*;
 public class JavaLoops{
@@ -62,7 +62,7 @@ public class JavaLoops{
     }
 }*/
 
-/* FOR LOOP 
+/* FOR LOOP */
 
 public class JavaLoops{
     public static void main(String args[]){
@@ -118,7 +118,7 @@ public class JavaLoops{
 
 /* break */
 
-/* Keep entering a number till user enters number multiple of 
+/* Keep entering a number till user enters number multiple of */
 
 import java.util.*;
 public class JavaLoops{
@@ -140,9 +140,9 @@ public class JavaLoops{
         }
         
     }
-}*/
+}
 
-/* CONTINUE STATEMENT 
+/* CONTINUE STATEMENT */
 
 public class JavaLoops{
     public static void main(String args[]){
@@ -153,9 +153,9 @@ public class JavaLoops{
         System.out.print(i + " ");
         }
     }
-}*/
+}
 
-/* Keep entering numbers till user enters number multiple of 
+/* Keep entering numbers till user enters number multiple of */
 
 import java.util.*;
 public class JavaLoops{
@@ -173,7 +173,7 @@ public class JavaLoops{
 }*/
 
 
-/* CHECK IF A NO IS PRIME 
+/* CHECK IF A NO IS PRIME */
 import java.util.*;
 public class JavaLoops{
     public static void main(String args[]){
@@ -211,7 +211,7 @@ public class JavaLoops{
 
 /*Question2:
 Write a program that reads a set of itegers, and then prints the sum of the
-even and odd integers. 
+even and odd integers. */
 
 import java.util.*;
 public class JavaLoops{
@@ -243,7 +243,7 @@ public class JavaLoops{
     }
 }
 
-FACTORIAL OF A NUMBER
+// FACTORIAL OF A NUMBER
 
 import java.util.*;
 public class JavaLoops{ 
@@ -280,7 +280,7 @@ public class JavaLoops{
         *
         **
         ***
-        ****
+        *****/
 
 public class JavaLoops{
     public static void main(String args[]){
@@ -294,11 +294,11 @@ public class JavaLoops{
     
 }
 
-        ****
+/*     ****
         ***
         **
         *
-        
+    */    
 public class JavaLoops{
     public static void main(String args[]){
       for(int line=1; line<=10; line ++){
@@ -309,8 +309,8 @@ public class JavaLoops{
         System.out.println();
       }  
     }
-}*/
-/* ANOTHER MEATHOD 
+}
+/* ANOTHER MEATHOD */
 
 public class JavaLoops{
     public static void main(String args[]){
@@ -323,11 +323,12 @@ public class JavaLoops{
         }
     }
 }
+/*
         A
         BC
         DEF
         GHIJ
-
+*/
 public class JavaLoops{
     public static void main(String args[]){
         int n = 4;
@@ -341,12 +342,12 @@ public class JavaLoops{
         }
     } 
 }       
-
+/*
         1
         12
         123
         1234
-
+*/
 public class JavaLoops{
     public static void main(String args[]){
         int n = 10;
@@ -363,11 +364,12 @@ public class JavaLoops{
         }
     }
 }
-
+/*
         ****
         *  *
         *  *
-        *****/
+        ****
+*/
 public class JavaLoops{
     public static void main(String args[]){
         for(int line=1; line<=4; line++){

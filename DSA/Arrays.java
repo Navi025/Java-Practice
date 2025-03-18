@@ -237,33 +237,33 @@ public static int linearSearch(int number[], int key){
 
         kadane(number);
 
-        // maxSubArraySum(number);
+        maxSubArraySum(number);
 
-        // maxSubArrayAum(number);
+        maxSubArrayAum(number);
 
-        // printSubArray(number);
+        printSubArray(number);
 
-        // pairs(number);
+        pairs(number);
 
-        // reverseArray(number);
+        reverseArray(number);
 
-        // int index = linearSearch(number,key);
+        int index = linearSearch(number,key);
 
-        // if(index==-1){
-        //     System.out.print("Not found");
-        // }
-        // else{
-        //     System.out.println("The key exists at index: "+ index);
-        // }
+        if(index==-1){
+            System.out.print("Not found");
+        }
+        else{
+            System.out.println("The key exists at index: "+ index);
+        }
         
-        // int result = binarySearch(number, key);
+        int result = binarySearch(number, key);
         
-        // if (result == -1){
-        //     System.out.println("The key is not the the array.");
-        // }
-        // else{
-        //     System.out.println("The key exists in the array at index: " + result);
-        // }
+        if (result == -1){
+            System.out.println("The key is not the the array.");
+        }
+        else{
+            System.out.println("The key exists in the array at index: " + result);
+        }
 
     }
 }
