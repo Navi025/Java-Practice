@@ -1,65 +1,68 @@
 
-// public class JavaBasics{
-//     public static void main(String[] args) {
-//     System.out.print("1,2,3,6,5,");
-//     System.out.print("1,2,3,6,5,");
-//     System.out.print("1,2,3,6,5,");
+import java.util.*;
+
+public class JavaBasics {
+
+    public static void main(String[] args) {
+        System.out.print("1,2,3,6,5,");
+        System.out.print("1,2,3,6,5,");
+        System.out.print("1,2,3,6,5,");
 //     }
 // }
 // //boilerpalte code
 // public class JavaBasics{
 //     public static void main(String[] args){
-//         System.out.println("*****");
-//         System.out.println("****");
-//         System.out.println("***");
-//         System.out.println("**");
-//         System.out.println("*");
+        System.out.println("*****");
+        System.out.println("****");
+        System.out.println("***");
+        System.out.println("**");
+        System.out.println("*");
 //     }
 // }
 // //VARIABLES
 // public class JavaBasics{
 //     public static void main(String args[]){
-//         int a = 10;
-//         int b = 20;
-//         System.out.println(a);
-//         System.out.println(b);
-//         String name = "Tony stark";
-//         System.out.println(name);
-//         a = b;
-//         System.out.print(a);
+        int a = 10;
+        int b = 20;
+        System.out.println(a);
+        System.out.println(b);
+        String name = "Tony stark";
+        System.out.println(name);
+        a = b;
+        System.out.print(a);
 //     } 
 // }
 // import java.util.*;
 //  public class JavaBasics{
 //     public static void main(String args[]){
-//         Scanner sc = new Scanner(System.in);
-//         //String input = sc.next();
-//         String input = sc.nextLine();
-//         System.out.print(input);
+        Scanner sc = new Scanner(System.in);
+        //String input = sc.next();
+        String input = sc.nextLine();
+        System.out.print(input);
 //     }
 //  } 
 // import java.util.*;
 // public class JavaBasics{
 //     public static void main(String args[]){
-//         Scanner sc = new Scanner(System.in);
-//         int a = sc.nextInt();
-//         System.out.println(a);
+        // Scanner sc = new Scanner(System.in);
+        int ab = sc.nextInt();
+        System.out.println(ab);
 //     }
 // } /
 // import java.util.*;
 // public class JavaBasics{
 //     public static void main(String args[]){
 //         Scanner sc = new Scanner(System.in);
-//         int a = sc.nextInt();
-//         System.out.print("The value of a is: "+a);
+        int abc = sc.nextInt();
+        System.out.print("The value of a is: " + abc);
 //     }
 // }
 // import java.util.*;
 // public class JavaBasics{
 //     public static void main(String args []){
 //         Scanner sc = new Scanner(System.in);
-//         float f = sc.nextFloat();
-//         System.out.println(f);
+        float f = sc.nextFloat();
+        System.out.println(f);
 //     }
 // } 
 // //SUM OF TWO NOS
@@ -67,10 +70,10 @@
 // public class JavaBasics{
 //     public static void main(String args []){
 //         Scanner sc = new Scanner(System.in);
-//         int a = sc.nextInt();
-//         int b = sc.nextInt();
-//         int sum = a + b;
-//         System.out.println(sum);
+        int az = sc.nextInt();
+        int bz = sc.nextInt();
+        int sum = az + bz;
+        System.out.println(sum);
 //     }
 // }
 // //   PRODUCT of 2 nos
@@ -78,10 +81,10 @@
 // public class JavaBasics{
 //     public static void main(String args[]){
 //         Scanner sc = new Scanner(System.in);
-//         int a = sc.nextInt();
-//         int b = sc.nextInt();
-//         int produst = a * b;
-//         System.out.println(produst); 
+        int ay = sc.nextInt();
+        int by = sc.nextInt();
+        int product = ay * by;
+        System.out.println(product);
 //     }
 // }
 // // ARES OF CIRCLE 
@@ -89,47 +92,42 @@
 // public class JavaBasics{
 //     public static void main(String args []){
 //         Scanner sc = new Scanner(System.in);
-//         float r = sc.nextFloat();
-//         float ar = 3.14f * r * r;
-//         System.out.print(ar);
+        float r = sc.nextFloat();
+        float ar = 3.14f * r * r;
+        System.out.println(ar);
 //     }
 // }
 
-public class JavaBasics {
-    
-
-
-    public static void main(String args[]){
-
-    }
-}
-
+// public class JavaBasics {
+        // public static void main(String args[]){
+//     }
+// }
 // /* TYPE CONVERSION ANd TYPE CATSING */
 // import java.util.*;
 // public class JavaBasics{
 //     public static void main(String args []){
-//         int a = 45;
-//         float b = 25.96f;
-//         float c = a;
-//         int d = (int)b;
-//         char ch = 'a';
-//         char ch2 = 'b';
-//         int number = ch;
-//         int number2 = ch2;
-//         System.out.println(ch);
-//         System.out.println(ch2);
-//         System.out.println(number);
-//         System.out.println(number2);
-//         System.out.println(a);
-//         System.out.println(b);
-//         System.out.println(c);
-//         System.out.println(d);
+        int ax = 45;
+        float bx = 25.96f;
+        float c = ax;
+        int d = (int) bx;
+        char ch = 'a';
+        char ch2 = 'b';
+        int number = ch;
+        int number2 = ch2;
+        System.out.println(ch);
+        System.out.println(ch2);
+        System.out.println(number);
+        System.out.println(number2);
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
 //     }
 // }
 // public class JavaBasics{
 //     public static void main(String args []){
-//         int $=24;
-//         System.out.println($);
+        int $ = 24;
+        System.out.println($);
 //     }
 // } 
 // /* Question 1 : In a program, input 3 numbers:A,BandC.
@@ -139,14 +137,14 @@ public class JavaBasics {
 // public class JavaBacics{
 //     public static void main(String args []){
 //         Scanner sc = new Scanner(System.in);
-//         System.out.print("Enter 1st no: ");
-//         int a = sc.nextInt();
-//         System.out.print("Enter 2nd no: "); 
-//         int b = sc.nextInt();
-//         System.out.print("Enter 3rd no: ");
-//         int c = sc.nextInt();
-//         float av = (a + b + c)/3;
-//         System.out.println(av);
+        System.out.print("Enter 1st no: ");
+        int ai = sc.nextInt();
+        System.out.print("Enter 2nd no: ");
+        int bi = sc.nextInt();
+        System.out.print("Enter 3rd no: ");
+        int ci = sc.nextInt();
+        float av = (ai + bi + ci) / 3;
+        System.out.println(av);
 //     }   
 // }
 // /* Question 2 : In a program, input the side of a square. 
@@ -156,10 +154,10 @@ public class JavaBasics {
 // public class JavaBasics{
 //     public static void main(String args[]){
 //         Scanner sc = new Scanner(System.in);
-//         System.out.print("Enter sides of Square: ");
-//         float s = sc.nextFloat();
-//         float Area = s * s;
-//         System.out.println(Area);
+        System.out.print("Enter sides of Square: ");
+        float s = sc.nextFloat();
+        float Area = s * s;
+        System.out.println(Area);
 //     }
 // }
 // /* Question 3 : Enter cost of 3 items from the user (using float data type)
@@ -170,117 +168,115 @@ public class JavaBasics {
 // public class JavaBasics{
 //     public static void main (String args []){
 //         Scanner sc = new Scanner(System.in);
-//         System.out.print("Enter the cost of pencil: ");
-//         float ps = sc.nextFloat();
-//         System.out.print("Enter the cost of pen: ");
-//         float pn = sc.nextFloat();
-//         System.out.print("Enter the cost of Eraser: ");
-//         float es = sc.nextFloat();
-//         float S_Total = ps + pn + es;
-//         float t = S_Total * 0.18f;
-//         float bill = S_Total + t;
-//         System.out.println("Cost of product = " + S_Total);
-//         System.out.println("GST = "+ t);
-//         System.out.println("Total bill with GST = " + bill); 
-//         sc.close();
+        System.out.print("Enter the cost of pencil: ");
+        float ps = sc.nextFloat();
+        System.out.print("Enter the cost of pen: ");
+        float pn = sc.nextFloat();
+        System.out.print("Enter the cost of Eraser: ");
+        float es = sc.nextFloat();
+        float S_Total = ps + pn + es;
+        float t = S_Total * 0.18f;
+        float bill = S_Total + t;
+        System.out.println("Cost of product = " + S_Total);
+        System.out.println("GST = " + t);
+        System.out.println("Total bill with GST = " + bill);
+        sc.close();
 //     }
 // }*/
 // /* CONDITIONAL STATEMENTS */
 // public class JavaBasics {
 //     public static void main(String args []){
-//         int age = 22;
-//         if (age >= 18){
-//             System.out.print("adult : Drive, Vote");
-//         }
-//         else{
-//             System.out.print("Not Adult");
-//         }
+        int age = 22;
+        if (age >= 18) {
+            System.out.print("adult : Drive, Vote");
+        } else {
+            System.out.print("Not Adult");
+        }
 //     }
 // }
 // // ODD OR EVEN 
 // import java.util.*;
 // public class JavaBacics{
 //     public static void main(String srgs[]){
-//         System.out.print("Enter a number: ");
-//         Scanner sc = new Scanner(System.in);
-//         int n = sc.nextInt();
-//         if (n%2==0){
-//             System.out.println("The no is even");
-//         }
-//         else{
-//             System.out.println("The no is odd");
-//         }
+        System.out.print("Enter a number: ");
+        // Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        if (n % 2 == 0) {
+            System.out.println("The no is even");
+        } else {
+            System.out.println("The no is odd");
+        }
 //     }
 // }
 // /* Elseif */
 // import java.util.*;
 // public class JavaBasics{
 //     public static void main(String args[]){
-//         System.out.print("ENter the age : ");
+        System.out.print("ENter the age : ");
 //         Scanner sc = new Scanner(System.in);
-//         float age = sc.nextFloat();
-//         if (age >= 18 && age <= 65){
-//             System.out.print("The person is Adult");
-//         }
-//         else if (age>65){
-//             System.out.println("The persion is Senior Citizen");
-//         }
-//         else {
-//             System.out.println("You are child");
-//         }
+        float age1 = sc.nextFloat();
+        if (age1 >= 18 && age1 <= 65) {
+            System.out.print("The person is Adult");
+        } else if (age1 > 65) {
+            System.out.println("The person is Senior Citizen");
+        } else {
+            System.out.println("You are child");
+        }
 //     }
 // }
 // /*INCOME TAX CALCULATOR */
 // import java.util.*;
 // public class JavaBacics{
 //     public static void main(String args[]){
-//         System.out.print("Enter the income : ");
+            System.out.print("Enter the income : ");
 //         Scanner sc = new Scanner(System.in);
-//         float income = sc.nextFloat();
-//         float tax;
-//         if (income < 500000){
-//             System.out.println("No Tax Applied");
-//         }
-//         else if ( income >= 500000 && income <= 1000000){
-//             tax = income * 0.2f;
-//             System.out.println("Tax applied 20% of net income: " + tax);
-//         }
-//         else {
-//             tax = income*0.3f;
-//             System.out.println("Tax Applied is 30% of net income: " + tax);
-//         }
+            float income = sc.nextFloat();
+            float tax;
+            if (income < 500000) {
+                System.out.println("No Tax Applied");
+            } else if (income >= 500000 && income <= 1000000) {
+                tax = income * 0.2f;
+                System.out.println("Tax applied 20% of net income: " + tax);
+            } else {
+                tax = income * 0.3f;
+                System.out.println("Tax Applied is 30% of net income: " + tax);
+            }
 //     }
 // }
 // /* TERNARAY OPERATOR */
 // public class JavaBacics{
 //     public static void main(String args[]){
-//         int no = 45;
-//         //Ternary Operator
-//         String result = (no%2==0)? "Even":"Odd";
-//         System.out.print(result);
+            int no = 45;
+            //Ternary Operator
+            String result = (no % 2 == 0) ? "Even" : "Odd";
+            System.out.print(result);
 //     }
 // } 
 // public class JavaBacics{
 //     public static void main(String args[]){
-//         int marks = 45;
-//         //tertiary oprator
-//         String result = (marks>=33)?"Pass":"Fail";
-//         System.out.println(result);
+            int subMarks = 45;
+            //tertiary oprator
+            String result1 = (subMarks >= 33) ? "Pass" : "Fail";
+            System.out.println(result1);
 //     }
 // }
 // /* SWITCH CASE */
 // public class JavaBacics{
 //     public static void main(String args[]){
-//         int no = 8;
-//         switch (no){
-//             case 1 : System.out.print("Samosa");
-//                         break;
-//             case 2 : System.out.println("Momos");
-//                         break;
-//             case 3 : System.out.println("Chocolate shake");
-//                         break;
-//             default : System.out.println("Kuch nhi milne wala");
-//         }
+            int nb = 8;
+            switch (nb) {
+                case 1:
+                    System.out.print("Samosa");
+                    break;
+                case 2:
+                    System.out.println("Momos");
+                    break;
+                case 3:
+                    System.out.println("Chocolate shake");
+                    break;
+                default:
+                    System.out.println("Kuch nhi milne wala");
+            }
 //     }
 // }
 // /* CALCULATOR */
@@ -289,22 +285,28 @@ public class JavaBasics {
 //     public static void main(String args[]){
 //         System.out.println("What you wanna do?\n +,-,*,/,%: ");
 //         Scanner sc = new Scanner(System.in);
-//         char choice = sc.next().charAt(0);
-//         int a = 4567;
-//         int b = 8567;
-//         switch (choice){
-//             case "+" : System.out.println(a+b);
-//                             break;
-//             case "-" : System.out.println(a-b);
-//                             break;
-//             case "*" : System.out.println(a*b);
-//                             break;
-//             case "/" : System.out.println(b/a);
-//                             break;
-//             case "%" : System.out.println(b%a);
-//                             break;
-//             default : System.out.println("Give a correct choice");  
-//         }
+            char choice = sc.next().charAt(0);
+            int al = 4567;
+            int bl = 8567;
+            switch (choice) {
+                case '+':
+                    System.out.println(al + bl);
+                    break;
+                case '-':
+                    System.out.println(al - bl);
+                    break;
+                case '*':
+                    System.out.println(al * bl);
+                    break;
+                case '/':
+                    System.out.println(bl / al);
+                    break;
+                case '%':
+                    System.out.println(bl % al);
+                    break;
+                default:
+                    System.out.println("Give a correct choice");
+            }
 //     }
 // }
 // /* CONDITIONAL STAEMENT QUESTIONS */
@@ -314,29 +316,27 @@ public class JavaBasics {
 // import java.util.*;
 // public class JavaBasics{
 //     public static void main(String args[]){
-//         System.out.print("Enter a number : ");
-//         Scanner sc = new Scanner(System.in);
-//         int num = sc.nextInt();
-//         if (num<0){
-//             System.out.println("The no is Negative.");
-//         }
-//         else{
-//             System.out.println("The no is Positive.");
-//         }
+            System.out.print("Enter a number : ");
+            // Scanner sc = new Scanner(System.in);
+            int num = sc.nextInt();
+            if (num < 0) {
+                System.out.println("The no is Negative.");
+            } else {
+                System.out.println("The no is Positive.");
+            }
 //     }
 // }
 // /* Question2:
 // Finish the following code so that it prints You have a fever if your temperature 
 // is above 100 and otherwise prints You don't have a fever. */
 // public class JavaBasics{
-//     public static void main(String args[]){
-//         double temp = 103.5;
-//         if (temp>100){
-//             System.out.print("You have a fever.");
-//         }
-//         else{
-//             System.out.println("You don't have a fever.");
-//         }
+            // public static void main(String args[]){
+            double temp = 103.5;
+            if (temp > 100) {
+                System.out.print("You have a fever.");
+            } else {
+                System.out.println("You don't have a fever.");
+            }
 //     }
 // }
 // /* Question3:
@@ -345,35 +345,43 @@ public class JavaBasics {
 // import java.util.*;
 // public class JavaBasics{
 //     public static void main(String args[]){
-//         System.out.print("Enter day no of a week : ");
-//         Scanner sc = new Scanner(System.in);
-//         int day = sc.nextInt();
-//         switch (day){
-//             case 1 : System.out.println("Monday");
-//             break;
-//             case 2 : System.out.println("Tuesday");
-//             break;
-//             case 3 : System.out.println("Wednesday");
-//             break;
-//             case 4 : System.out.println("Thursday");    
-//             break;
-//             case 5 : System.out.println("Friday");
-//             break;
-//             case 6 : System.out.println("Saturday");
-//             break;
-//             case 7 : System.out.println("Sunday");
-//             break;
-//             default : System.out.println("Enter an interger between 1-7");     
-//         }
+            System.out.print("Enter day no of a week : ");
+            // Scanner sc = new Scanner(System.in);
+            int day = sc.nextInt();
+            switch (day) {
+                case 1:
+                    System.out.println("Monday");
+                    break;
+                case 2:
+                    System.out.println("Tuesday");
+                    break;
+                case 3:
+                    System.out.println("Wednesday");
+                    break;
+                case 4:
+                    System.out.println("Thursday");
+                    break;
+                case 5:
+                    System.out.println("Friday");
+                    break;
+                case 6:
+                    System.out.println("Saturday");
+                    break;
+                case 7:
+                    System.out.println("Sunday");
+                    break;
+                default:
+                    System.out.println("Enter an interger between 1-7");
+            }
 //     }
 // }
 // public class JavaBasics{
 //     public static void main(String args[]) {
-//         int a = 63, b = 36; 
-//         boolean x = (a < b) ? true : false; 
-//         int y = (a > b) ? a : b;
-//         System.out.println("x = " + x);
-//         System.out.println("y : " + y);
+            int ag = 63, bg = 36;
+            boolean x = (ag < bg) ? true : false;
+            int y = (ag > bg) ? ag : bg;
+            System.out.println("x = " + x);
+            System.out.println("y : " + y);
 //     }
 // }
 // /*Question5: WRONG SOL
@@ -383,30 +391,29 @@ public class JavaBasics {
 // import java.util.*;
 //     public class JavaBasics{
 //         public static void main(String args[]){
-//             System.out.print("Enter a year : ");
+            System.out.print("Enter a year : ");
 //             Scanner sc = new Scanner(System.in);
-//             int year = sc.nextInt();
-//             if (year % 4 == 0){
-//                 System.out.println("This is a leap year");
-//             }
-//             else if (year % 100 == 0){
-//                 System.out.println("This is a leap year");}
-// // WRONG SOL            
-//             else if (year % 400 == 0){
-//                 System.out.println("This is a leap year");
-//             }    
-//             else {
-//                 System.out.println("This is NOT a leap year");
-//             }
+            int year = sc.nextInt();
+            if (year % 4 == 0) {
+                System.out.println("This is a leap year");
+            } else if (year % 100 == 0) {
+                System.out.println("This is a leap year");
+            } // // WRONG SOL            
+            else if (year % 400 == 0) {
+                System.out.println("This is a leap year");
+            } else {
+                System.out.println("This is NOT a leap year");
+            }
 //         }
 //     }
 //     /* LOOPS */
 // public class JavaBasics{
 //     public static void main(String args[]){
-//         int counter = 0;
-//         while (counter < 3){
-//             System.out.println("Navnitya is a Software Developer");
-//             counter++;
-//         }
-//     }
-// }
+            int counter = 0;
+            while (counter < 3) {
+                System.out.println("Navnitya is a Software Developer");
+                counter++;
+            }
+        
+    }
+}
