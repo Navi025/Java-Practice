@@ -1,8 +1,8 @@
  
  /* LOOPS */
 
-
- public class JavaLoops{
+import java.util.*;
+public class JavaLoops{
     public static void main(String args[]){
         int counter = 0;
         while (counter < 3){
@@ -10,24 +10,24 @@
             counter++;
         }
 
-    }
-}*/
+//     }
+// }*/
 
 /* Print no 1 to 10 */
 
-public class JavaLoops{
-    public static void main(String args[]){
-        int counter = 1;
-        while (counter <=10000){
-            System.out.print(counter+" ");
-            counter++;
+// public class JavaLoops{
+//     public static void main(String args[]){
+        int counter1 = 1;
+        while (counter1 <=10000){
+            System.out.print(counter1+" ");
+            counter1++;
         }  
-    }
-}
+//     }
+// }
 
-import java.util.*;
-public class JavaLoops{
-    public static void main(String args[]){
+
+// public class JavaLoops{
+    // public static void main(String args[]){
         System.out.print("Enter tha range of nos : ");
         Scanner sc = new Scanner(System.in);
         int range = sc.nextInt();
@@ -329,27 +329,27 @@ public class JavaLoops{
         DEF
         GHIJ
 */
-public class JavaLoops{
-    public static void main(String args[]){
-        int n = 4;
+// public class JavaLoops{
+//     public static void main(String args[]){
+        int nq = 4;
         char ch = 'A';
-        for (int i = 1; i<=n; i++){
+        for (int i = 1; i<=nq; i++){
             for (int j = 1; j<=i ; j++){
                 System.out.print(ch);
                 ch++;
             }
         System.out.println();
         }
-    } 
-}       
+    // } 
+// }       
 /*
         1
         12
         123
         1234
 */
-public class JavaLoops{
-    public static void main(String args[]){
+// public class JavaLoops{
+//     public static void main(String args[]){
         int n = 10;
        // int num = 1;
         for (int i=1; i<=n; i++){
@@ -362,16 +362,16 @@ public class JavaLoops{
             }
         System.out.println();
         }
-    }
-}
+//     }
+// }
 /*
         ****
         *  *
         *  *
         ****
 */
-public class JavaLoops{
-    public static void main(String args[]){
+// public class JavaLoops{
+//     public static void main(String args[]){
         for(int line=1; line<=4; line++){
             if(line==2 && line ==3){
                     System.out.print("*   *");
