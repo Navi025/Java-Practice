@@ -243,7 +243,7 @@ public class Jpatturn {
         //binaryTriangle(5);
         //butterfly(5);
         //solid_rhombus(5);
-        //hollow_Rhombus(5);
+        hollow_Rhombus(5);
         //diamond(4);
     }
 }
