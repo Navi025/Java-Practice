@@ -113,7 +113,6 @@ public class practice {
     }
 
     public static int binaryToDecimal(int binNum) {
-        int myNum = binNum;
         int pow = 0;
         int dec = 0;
         while (binNum > 0) {
