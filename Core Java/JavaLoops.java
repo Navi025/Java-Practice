@@ -11,7 +11,7 @@ public class JavaLoops{
         }
 
 //     }
-// }*/
+// }
 
 /* Print no 1 to 10 */
 
@@ -36,18 +36,18 @@ public class JavaLoops{
             System.out.print(counter + " ");
             counter++;
         }
-    }
-}
+//     }
+// }
 
 /* SUM OF FIRST N NATUTAL NOS. */
 
-import java.util.*;
-public class JavaLoops{
-    public static void main(String args[]){
+// import java.util.*;
+// public class JavaLoops{
+//     public static void main(String args[]){
         
         System.out.print("Enter teh range of natural nos to be added: ");
         
-        Scanner sc = new Scanner(System.in);
+        // Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int sum=0;
         int i = 1;
@@ -59,35 +59,35 @@ public class JavaLoops{
         }    
         System.out.print(sum);
 
-    }
-}*/
+//     }
+// }*/
 
 /* FOR LOOP */
 
-public class JavaLoops{
-    public static void main(String args[]){
+// public class JavaLoops{
+    // public static void main(String args[]){
         for (int i = 1; i <= 4; i++ ){
             System.out.println("Im Navnitya Vinayak");
         }
-    }
-}
+//     }
+// }
 
-public class JavaLoops{
-    public static void main(String args[]){
-        for (int line = 1; line<=4; line++){;
+// public class JavaLoops{
+//     public static void main(String args[]){
+        for (int line = 1; line<=4; line++){
         System.out.println("****");
         }
 
-    }
-}
+//     }
+// }
 
 //10899 10000+800+90+9
 //V-I-P-O
-import java.util.*;
-public class JavaLoops{
-    public static void main(String args[]){
+// import java.util.*;
+// public class JavaLoops{
+//     public static void main(String args[]){
     System.out.print("Enter a number : ");
-    Scanner sc = new Scanner(System.in);
+    // Scanner sc = new Scanner(System.in);
     int n = sc.nextInt();
 
      while (n>0){
@@ -96,38 +96,38 @@ public class JavaLoops{
         n=n/10;
      
         } 
-    }    
-}
+//     }    
+// }
 
-import java.util.*;
-public class JavaLoops{
-    public static void main(String args[]){
+// import java.util.*;
+// public class JavaLoops{
+//     public static void main(String args[]){
     System.out.print("Enter a number : ");
-    Scanner sc = new Scanner(System.in);
-    int n = sc.nextInt();
+    // Scanner sc = new Scanner(System.in);
+    int ni = sc.nextInt();
     int rev = 0;
-     while (n > 0){
+     while (ni > 0){
         int r = n % 10;
         rev = rev * 10 + r;
         n = n / 10;
      
         }
     System.out.print(rev); 
-    }    
-}*/
+//     }    
+// }*/
 
 /* break */
 
 /* Keep entering a number till user enters number multiple of */
 
-import java.util.*;
-public class JavaLoops{
-    public static void main(String args[]){
+// import java.util.*;
+// public class JavaLoops{
+//     public static void main(String args[]){
        
         System.out.print("Enter any no. other tha nmultiple of 10 : ");
        
-        Scanner sc = new Scanner(System.in);
-        //int num = sc.nextInt();
+        // Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
        
         while(true){
         System.out.print("Enter any no. other tha nmultiple of 10 : ");
@@ -144,23 +144,23 @@ public class JavaLoops{
 
 /* CONTINUE STATEMENT */
 
-public class JavaLoops{
-    public static void main(String args[]){
+// public class JavaLoops{
+//     public static void main(String args[]){
         for (int i = 1; i <= 5;i++){ 
             if (i==3){
                 continue;
             }
         System.out.print(i + " ");
         }
-    }
-}
+//     }
+// }
 
 /* Keep entering numbers till user enters number multiple of */
 
-import java.util.*;
-public class JavaLoops{
-    public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
+// import java.util.*;
+// public class JavaLoops{
+//     public static void main(String args[]){
+//         Scanner sc = new Scanner(System.in);
         while (true){
             System.out.println("ENter a num: ");
             int num = sc.nextInt();
@@ -169,18 +169,18 @@ public class JavaLoops{
             }
         System.out.println(num);
         }
-    }
-}*/
+//     }
+// }*/
 
 
 /* CHECK IF A NO IS PRIME */
-import java.util.*;
-public class JavaLoops{
-    public static void main(String args[]){
+// import java.util.*;
+// public class JavaLoops{
+//     public static void main(String args[]){
         
         System.out.print("Enter a num : ");
         
-        Scanner sc = new Scanner(System.in);
+        // Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
 
         boolean isPrime = true;
@@ -197,8 +197,8 @@ public class JavaLoops{
         else{
             System.out.println("The no is not prime");
         }
-    }
-}
+//     }
+// }
 
 public class JavaLoops{
     public static void main(String[]args){
@@ -372,17 +372,15 @@ public class JavaLoops{
 */
 // public class JavaLoops{
 //     public static void main(String args[]){
-        for(int line=1; line<=4; line++){
-            if(line==2 && line ==3){
-                    System.out.print("*   *");
-                }
-                else{
-            for(int star=1; star<=5; star++){
+      int n = 4;
+        for (int i = 1; i <= n; i++) {
+            if (i == 2 || i == 3) {
+                System.out.print("*     *");
+            } else {
+                    System.out.print("* * * *");
                 
-                System.out.print("*");
-                } 
             }
-            System.out.println();
+            System.out.println("");
         }
-    }
-}
+//     }
+// }

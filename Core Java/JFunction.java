@@ -29,7 +29,7 @@ public class JFunction{
 
 /* PRODUCT OF TWO NOS */
 
-public class JFunction{
+// public class JFunction{
     public static int multiply(int a,int b){
         int product = a*b;
         return product;
@@ -41,11 +41,11 @@ public class JFunction{
         int product = multiply(x,y);
         System.out.print("The product = " + product);
     }
-}   
+// }   
 
 /* FACTORIAL OF N */
-import java.util.*;
-public class JFunction{
+// import java.util.*;
+// public class JFunction{
     
     public static int factorial(int n){
         int fact = 1;
@@ -63,10 +63,9 @@ public class JFunction{
         System.out.println("The factorial is " + fact);
     }
 
-}
+// }
 
-import java.util.*;
-public class JFunction{
+// public class JFunction{
     
     public static int factorial(int n){
         int fact = 1;
@@ -233,7 +232,7 @@ public class JFunction{
 
     /* Decimal To Binary */
 
-public class JFunction{
+// public class JFunction{
     public static int decimalToBinary(int n){
         int pow = 0;
         int myNum = n;
@@ -249,7 +248,7 @@ public class JFunction{
         return binNum;    
     }
 
-    public static void main(String args[]){
-        decimalToBinary(5);
-    }
-}
+    // public static void main(String args[]){
+    //     decimalToBinary(5);
+    // }
+// }
