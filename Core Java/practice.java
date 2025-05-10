@@ -323,7 +323,7 @@ public class practice {
 
     }
 
-     /*              Diamond
+    /*              Diamond
                     *           s = 3   st = 1
                    ***          s = 2   st = 3
                   *****         s = 1   st = 5
@@ -331,27 +331,109 @@ public class practice {
                   *****
                    ***
                     *
-*/
+     */
+    public static void diamond(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print("   ");
+            }
+            for (int j = 1; j <= 2 * i - 1; j++) {
+                System.out.print(" * ");
+            }
+            System.out.println();
+        }
+        for (int i = n; i >= 1; i--) {
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print("   ");
+            }
+            for (int j = 1; j <= 2 * i - 1; j++) {
+                System.out.print(" * ");
+            }
+            System.out.println();
+        }
+    }
 
-    public static void diamond(int n){
-        for(int i=1;i<=n;i++){
-            for(int j  = 1; j<=n-i;j++){
-                System.out.print("   ");
+    /*      
+        ARRAYS
+
+    - Largest in Array
+    - Creating an Array
+    - Input Array Elements
+    - Linear search
+
+    1. BINARY SEARCH
+    2. REVERSE AN ARRAY
+    3. PAIRS OF NUMBER
+    4. Print SUBARRAYS
+    5. Min/Max SUBARRAY SUM
+    6. Min/Max SUBARRAY SUM - Prefix Array Meathod
+    7. Min/Max SUBARRAY SUM - Kadane's ALGO
+     */
+    public static int largestInArray(int num[]) {
+        int lar = Integer.MIN_VALUE;
+        for (int i = 0; i < num.length; i++) {
+            if (num[i] > lar) {
+                lar = num[i];
             }
-            for(int j = 1;j<=2*i-1;j++){
-                System.out.print(" * ");
-            }
-            System.out.println();
         }
-         for(int i=n;i>=1;i--){
-            for(int j  = 1; j<=n-i;j++){
-                System.out.print("   ");
-            }
-            for(int j = 1;j<=2*i-1;j++){
-                System.out.print(" * ");
-            }
-            System.out.println();
+        return lar;
+    }
+
+    public static int[] createArray() {
+        int arr[] = new int[5];
+        Scanner sc = new Scanner(System.in);
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = sc.nextInt();
         }
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(+arr[i] + " ");
+        }
+        return arr;
+    }
+
+    public static int linearSearch(int num[], int key) {
+        for (int i = 0; i < num.length; i++) {
+            if (num[i] == key) {
+                return i;
+            }
+
+        }
+
+        System.out.println("Not Found!");
+        return -1;
+    }
+
+    public static int binarySearch(int arr[], int key) {
+        int start = 0;
+        int end = arr.length - 1;
+
+        while (start <= end) {
+            int mid = (start + end) / 2;
+
+            if (arr[mid] == key) {
+                return mid;
+            } else if (arr[mid] > key) {
+                end = mid - 1;
+            } else if (arr[mid] < key) {
+                start = mid + 1;
+            }
+
+        }
+        return -1;
+    }
+
+    // REVERSE AN ARRAY
+    public static void reverseArray(int num[]) {
+        int start = 0;
+        int end = num.length - 1;
+        while (start <= end) {
+            int temp = start;
+            start = end;
+            end = temp;
+            start++;
+            end--;
+        }
+        
     }
 
     public static void main(String args[]) {
@@ -375,7 +457,30 @@ public class practice {
         // binaryTriangle(7);
         // butterfly(7);
         // hRhombus(5);
-        diamond(4);
+        // diamond(4);
+        int arr[] = {2, 4, 6, 8, 10, 12};
+        // System.out.println(largestInArray(arr));
+        // createArray();
 
+        {   // LINERAR SEARCH
+            // int result = linearSearch(arr, 10);
+            //  if(result == -1){
+            //     System.out.println("Not found");
+            //  }else{
+            //     System.out.println("the required value is at index: " + result);
+            //  }
+        }
+
+        {   //  BINARY SEARCH
+            int num[] = {44, 46, 47, 49, 62, 66, 69, 78, 95, 96, 97, 98, 99};
+            int result = binarySearch(num, 66);
+
+            if (result == -1) {
+                System.out.println("Item Not Found");
+            } else {
+                System.out.println("The key is at index: " + result);
+            }
+
+        }
     }
 }
