@@ -379,6 +379,7 @@ public class practice {
         return lar;
     }
 
+//      CREATE AN ARRAY
     public static int[] createArray() {
         int arr[] = new int[5];
         Scanner sc = new Scanner(System.in);
@@ -391,6 +392,7 @@ public class practice {
         return arr;
     }
 
+//      LINEAR SEARCH
     public static int linearSearch(int num[], int key) {
         for (int i = 0; i < num.length; i++) {
             if (num[i] == key) {
@@ -403,6 +405,7 @@ public class practice {
         return -1;
     }
 
+//      BINARY SEARCH
     public static int binarySearch(int arr[], int key) {
         int start = 0;
         int end = arr.length - 1;
@@ -427,13 +430,106 @@ public class practice {
         int start = 0;
         int end = num.length - 1;
         while (start <= end) {
-            int temp = start;
-            start = end;
-            end = temp;
+            int temp = num[start];
+            num[start] = num[end];
+            num[end] = temp;
             start++;
             end--;
         }
-        
+        for (int i = 0; i < num.length; i++) {
+            System.out.print(num[i] + ", ");
+        }
+    }
+
+//      PAIRS OF NUM IN AN ARRAY
+    public static void pairsOfNum(int num[]) {
+        int tp = 0;
+        for (int i = 0; i < num.length; i++) {
+            for (int j = i + 1; j < num.length; j++) {
+                System.out.println("(" + num[i] + "," + num[j] + ")");
+                tp++;
+            }
+        }
+        System.out.println("Total pairs: " + tp);
+    }
+
+    public static void printSubarray(int arr[]) {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i; j < arr.length; j++) {
+                for (int k = i; k <= j; k++) {
+                    System.out.print(arr[k] + " ");
+                }
+                System.out.println("");
+            }
+            System.out.println("");
+        }
+    }
+
+    public static void maxSubArraySum(int arr[]) {
+        int maxSum = Integer.MIN_VALUE;
+        int currSum = 0;
+        int miniSum = Integer.MAX_VALUE;
+
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i; j < arr.length; j++) {
+                currSum = 0;
+                for (int k = i; k <= j; k++) {
+                    currSum = currSum + arr[k];
+                }
+                System.out.print(currSum + " ");
+                if (currSum > maxSum) {
+                    maxSum = currSum;
+                }
+                if (currSum < miniSum) {
+                    miniSum = currSum;
+                }
+                System.out.println();
+            }
+            System.out.println();
+        }
+        System.out.println("Max Sub-ArraySum : " + maxSum);
+        System.out.println("Mini Sub-ArraySum : " + miniSum);
+    }
+
+//      Max SubArray Sum - Prefix Array Meathod
+    public static void prefixSubArraySum(int arr[]) {
+        int maxSum = Integer.MIN_VALUE;
+        int currSum = 0;
+        int prefix[] = new int[arr.length];
+
+        prefix[0] = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            prefix[i] = prefix[i - 1] + arr[i];
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i; j < arr.length; j++) {
+                currSum = i == 0 ? prefix[j] : prefix[j] - prefix[i - 1]; // tertiary operator
+                // here [i] is [start] and [j] is [end]
+            }
+
+            if (currSum > maxSum) {
+                maxSum = currSum;
+            }
+        }
+        System.out.print("Max Sub-Array Sum using Prefix Array: " + maxSum);
+    }
+
+//      Max SubArray Sum - KADANE's ALGO
+    public static void kadaneSubArraySum(int arr[]) {
+        int maxSum = Integer.MIN_VALUE;
+        int currSum = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            currSum = currSum + arr[i];
+
+            if( currSum < 0){
+                currSum = 0;
+            }
+            maxSum = Math.max(currSum,maxSum);
+        }
+
+        System.out.println("Max SubArray Sum using Kadan's Algo: " + maxSum);
     }
 
     public static void main(String args[]) {
@@ -458,7 +554,7 @@ public class practice {
         // butterfly(7);
         // hRhombus(5);
         // diamond(4);
-        int arr[] = {2, 4, 6, 8, 10, 12};
+        int arr1[] = {2, 4, 6, 8, 10, 12};
         // System.out.println(largestInArray(arr));
         // createArray();
 
@@ -472,15 +568,21 @@ public class practice {
         }
 
         {   //  BINARY SEARCH
-            int num[] = {44, 46, 47, 49, 62, 66, 69, 78, 95, 96, 97, 98, 99};
-            int result = binarySearch(num, 66);
+            // int num[] = {44, 46, 47, 49, 62, 66, 69, 78, 95, 96, 97, 98, 99};
+            // int result = binarySearch(num, 66);
 
-            if (result == -1) {
-                System.out.println("Item Not Found");
-            } else {
-                System.out.println("The key is at index: " + result);
-            }
-
+            // if (result == -1) {
+            //     System.out.println("Item Not Found");
+            // } else {
+            //     System.out.println("The key is at index: " + result);
+            // }
         }
+        // pairsOfNum(arr);
+        // printSubarray(arr);
+        // reverseArray(arr);
+        // maxSubArraySum(arr);
+        // prefixSubArraySum(arr);
+        int arr[] = {-1,-2,-3,-4}; 
+        kadaneSubArraySum(arr);
     }
 }
